@@ -1,0 +1,51 @@
+/* Estilo general con color principal */
+body {
+    background-color: #092f57;
+}
+
+/* Estilo del botón principal de ayuda */
+#help-button {
+    position: fixed;
+    left: 10px; /* Botón a la izquierda de la pantalla */
+    bottom: 20px; /* Posiciona el botón a 20px del fondo */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #092f57; /* Color del texto y el icono */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Estilo del botón al pasar el ratón */
+#help-button:hover {
+    background-color: #092f57;
+    color: #ffffff;
+}
+
+/* Estilo del icono en el botón */
+#help-button::before {
+    content: "\f059"; /* Código Unicode para el icono de pregunta (FontAwesome) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Estilo del texto del botón */
+#help-button span {
+    font-weight: bold;
+}
+
+/* Asegura que FontAwesome esté disponible */
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff") format("woff");
+}
+
